@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Registro</title>
+	<link rel="stylesheet" href="forms.css">
+	<link rel="stylesheet" href="Estilo.css">
+	<script lenguaje="javascript" SRC="Script1.js"></script> 
+</head>
+<body >
+	<header class="fondo">
+		
+		<div >
+			
+			<p class="letrasform">REGISTRO</p>
+		</div>
+	</header>
+	
+	<section>
+		<h1>FORMULARIO DE INSCRIPCION DE MASCOTAS</h1>
+		<form name="formMascota" method="post" action="registrar.php">
+			<h2>Datos de la mascota</h2>
+			<input type="text" onFocus=borrar_texto() name="nombre" placeholder="nombre" class="etexts"/>
+
+			<input type="text" onFocus=borrar_texto() name="nombre" placeholder="Codigo de Propietario" class="etexts"/>
+			<br>
+			<label type ="text" class="etexts">Edad de Mascota: </label>
+			<select>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+				<option value="9">9</option>
+				<option value="10">10</option>
+				<option value="11">11</option>
+				<option value="12">12</option>
+				<option value="13">13</option>
+				<option value="14">14</option>
+				<option value="15">15</option>
+			</select>
+			<!--<input type="text" name="edad" placeholder="edad" class="etexts"/>-->
+			<br>
+			<br>
+			<!--<input type="text"  name="peso" placeholder="peso" class="etexts"/>-->
+			<label type ="text" class="etexts">Peso de la Mascota: </label>
+			<select>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+				<option value="9">9</option>
+				<option value="10">10</option>
+				<option value="11">11</option>
+				<option value="12">12</option>
+				<option value="13">13</option>
+				<option value="14">14</option>
+				<option value="15">15</option>
+			</select>
+			<label type = "text" class="texto">.</label>
+			<select>
+				<option value="2">1</option>
+				<option value="3">2</option>
+				<option value="4">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+				<option value="9">9</option>
+				<option value="10">10</option>
+				<option value="11">11</option>
+				<option value="12">12</option>
+				<option value="13">13</option>
+				<option value="14">14</option>
+				<option value="15">15</option>
+			</select>
+			<br>
+			<br>
+			<label type ="text" class="texto">Color de la Mascota: </label>
+			<br>
+			<!--Colores-->
+			<center>
+			<table class="tabla" border="1">
+				<div class="onoffswitch">
+					<tr>
+						<td>
+							<label type ="text" class="texto">Blanco </label>
+							<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked onclick="valor()">
+							<label class="onoffswitch-label" for="myonoffswitch">
+								<span class="onoffswitch-inner"></span>
+								<span class="onoffswitch-switch"></span>
+							</label>
+						</td>
+						<td>
+							<label type ="text" class="texto">Negro </label>
+							<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked onclick="valor()">
+							<label class="onoffswitch-label" for="myonoffswitch">
+								<span class="onoffswitch-inner"></span>
+								<span class="onoffswitch-switch"></span>
+							</label></td>
+							<td>
+								<label type ="text" class="texto">Cafe </label>
+								<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked onclick="valor()">
+								<label class="onoffswitch-label" for="myonoffswitch">
+									<span class="onoffswitch-inner"></span>
+									<span class="onoffswitch-switch"></span>
+								</label>
+							</td>
+						</tr>
+					</div>
+
+					<div class="onoffswitch">
+						<tr>
+							<td>
+								<label type ="text" class="texto">Plomo </label>
+								<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked onclick="valor()">
+								<label class="onoffswitch-label" for="myonoffswitch">
+									<span class="onoffswitch-inner"></span>
+									<span class="onoffswitch-switch"></span>
+								</label>
+							</td>
+							<td>
+								<label type ="text" class="texto">Verde </label>
+								<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked onclick="valor()">
+								<label class="onoffswitch-label" for="myonoffswitch">
+									<span class="onoffswitch-inner"></span>
+									<span class="onoffswitch-switch"></span>
+								</label>
+							</td>
+							<td>
+								<label type ="text" class="texto">Rojo </label>
+								<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked onclick="valor()">
+								<label class="onoffswitch-label" for="myonoffswitch">
+									<span class="onoffswitch-inner"></span>
+									<span class="onoffswitch-switch"></span>
+								</label>
+							</td>
+						</tr>
+					</div>
+					<div class="onoffswitch">
+						<tr>
+							<td>
+								<label type ="text" class="texto">Azul </label>
+								<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked onclick="valor()">
+								<label class="onoffswitch-label" for="myonoffswitch">
+									<span class="onoffswitch-inner"></span>
+									<span class="onoffswitch-switch"></span>
+								</label>
+							</td>
+							<td>
+								<label type ="text" class="texto">Magenta </label>
+								<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked onclick="valor()">
+								<label class="onoffswitch-label" for="myonoffswitch">
+									<span class="onoffswitch-inner"></span>
+									<span class="onoffswitch-switch"></span>
+								</label>
+							</td>
+							<td>
+								<label type ="text" class="texto">Cian </label>
+								<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked onclick="valor()">
+								<label class="onoffswitch-label" for="myonoffswitch">
+									<span class="onoffswitch-inner"></span>
+									<span class="onoffswitch-switch"></span>
+								</label>
+							</td>
+						</tr>
+					</div>
+
+					<div class="onoffswitch">
+						<tr>
+							<td>
+								<label type ="text" class="texto">Amarillo </label>
+								<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked onclick="valor()">
+								<label class="onoffswitch-label" for="myonoffswitch">
+									<span class="onoffswitch-inner"></span>
+									<span class="onoffswitch-switch"></span>
+								</label>
+							</td>
+							<td>
+								<label type ="text" class="texto">Violeta </label>
+								<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked onclick="valor()">
+								<label class="onoffswitch-label" for="myonoffswitch">
+									<span class="onoffswitch-inner"></span>
+									<span class="onoffswitch-switch"></span>
+								</label>
+							</td>
+							<td>
+								<label type ="text" class="texto">Naranja </label>
+								<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked onclick="valor()">
+								<label class="onoffswitch-label" for="myonoffswitch">
+									<span class="onoffswitch-inner"></span>
+									<span class="onoffswitch-switch"></span>
+								</label>
+							</td>
+						</tr>
+					</div>
+				</table>
+				</center>
+				<br>
+				<input type="text" name="obs" placeholder="observaciones" class="etexts"/>
+
+				<input type="text" name="raza" placeholder="raza" class="etexts"/>
+
+				<br>
+					<div class="onoffswitch">
+				<label type ="text" class="texto">Sexo de la mascota: </label> 
+						<label type ="text" class="texto"> Macho </label>
+						<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked onclick="valor()">
+						<label class="onoffswitch-label" for="myonoffswitch">
+							<span class="onoffswitch-inner"></span>
+							<span class="onoffswitch-switch"></span>
+						</label>
+						<label type ="text" class="texto">Hembra </label>
+						<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked onclick="valor()">
+						<label class="onoffswitch-label" for="myonoffswitch">
+							<span class="onoffswitch-inner"></span>
+							<span class="onoffswitch-switch"></span>
+						</label>
+					</div>
+					<br><br>
+					<div class="onoffswitch">
+					<label type ="text" class="texto">Esterelizado</label> 
+						<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked onclick="valor()">
+						<label class="onoffswitch-label" for="myonoffswitch">
+							<span class="onoffswitch-inner"></span>
+							<span class="onoffswitch-switch"></span>
+						</label>
+					</div>
+
+					<br><br>
+					<label type ="text" class="texto"> Tamaño: </label> 
+					<select>
+				<option value="2">1</option>
+				<option value="3">2</option>
+				<option value="4">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+				<option value="9">9</option>
+				<option value="10">10</option>
+				<option value="11">11</option>
+				<option value="12">12</option>
+				<option value="13">13</option>
+				<option value="14">14</option>
+				<option value="15">15</option>
+			</select>
+
+				<h2>Datos del propietario</h2>
+				<input type="text"  name="nomProp" placeholder="nombres"class="etexts"/>
+
+				<input type="text"  name="ApPat" placeholder="Apellido Paterno" class="etexts"/>
+				<br>
+				<input type="text" name="ApMat" placeholder="Apellido Materno" class="etexts"/>
+
+				<input type="text"  name="CI" placeholder="CI" class="etexts"/>
+				<br>
+				<input type="text"  name="email" placeholder="email"class="etexts"/>
+
+				<input type="text"  name="tfijo" placeholder="telefono fijo" class="etexts"/>
+
+				<br>
+
+				<input type="text" name="celular" placeholder="celular"class="etexts"/>
+
+				<input type="text" name="ocup" placeholder="ocupacion" class="etexts"/>
+
+				<br>
+
+				<input type="text" name="zona" placeholder="zona"class="etexts"/>
+
+				<input type="text" name="tipV" placeholder="tipo Vivienda" class="etexts"/>
+
+				<br>
+
+				<input type="text" name="NroViv" placeholder="Nro Vivienda" class="last"/>
+
+
+
+				<input type="submit" name="submit" value="Registrar" class="boton"/>
+				<br>
+				<input type="reset" value="Limpiar" class="boton"/>
+			</form>	
+		</section>
+	</body>
+	</html>
